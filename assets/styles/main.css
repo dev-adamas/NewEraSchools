@@ -1,0 +1,58 @@
+.hero{
+    background: url(../images/hero2.jpg), linear-gradient(60deg, #090000, #838383) ;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+
+/* .feature{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+} */
+
+.playground{
+    background: url(../images/pg2.webp);
+    background-size: cover;
+    /* background-position: center; */
+    background-blend-mode: overlay;
+}
+
+.pg{
+    background: transparent;
+    backdrop-filter: blur(2px);
+}
+
+.library{
+    height: 100%;
+    padding: 3rem 0rem;
+    background: url(../images/library.jpeg), #09000090;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+
+.feat>div{
+ background: transparent;
+ backdrop-filter: blur(8px);
+
+ 
+}
+.feat>div:where(:not(:last-of-type)){
+    border-right: 1px solid rgb(222, 188, 115);
+ }
+
+ .feat>div:first-of-type{
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+  }
+ .feat>div:last-of-type{
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+  }
+
+
+  @media screen and (max-width: 992px){
+    
+  }

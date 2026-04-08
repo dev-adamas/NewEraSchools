@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official - neweraschools</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+     <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css"
+    />
+
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/png">
+
+    <style>
+        /* Custom icon for the collapsed state (plus sign) */
+.accordion-button::after {
+  /* background-image: url("data:image/svg+xml,..."); Insert SVG here */
+  content: '+';
+  transition: transform 0.2s ease-in-out;
+  background: none;
+  font-weight: bold;
+  background-color: #000;
+  border-radius: 3e3px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  align-items: center;
+  color: #efefef;
+}
+
+/* Custom icon for the expanded state (minus sign) */
+.accordion-button:not(.collapsed)::after {
+  /* background-image: url("data:image/svg+xml,..."); Insert SVG here */
+  content: '-';
+  background: none;
+  font-weight: bold;
+   background-color: #000;
+  border-radius: 3e3px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  align-items: center;
+  color: #efefef;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="light">
+
+        <div class="container-lg">
+
+            <a href="/" class="navbar-brand">
+                <img src="./assets/images/logo.png" alt="" width="88px">
+            </a>  
+
+
+            <button class="navbar-toggler border-0 shadow-none" data-bs-toggle="offcanvas" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="offcanvas offcanvas-start w-75" id="menu">
+                <div class="d-block d-lg-none text-end pe-3 py-1">
+                    <button class="btn-close shadow-none border-0" data-bs-dismiss="offcanvas"></button>
+                </div>
+
+                <ul class="navbar-nav ms-lg-auto">
+                    <li class="nav-item ps-2"><a href="" class="nav-link">Home</a></li>
+                    <li class="nav-item ps-2"><a href="" class="nav-link">About Us</a></li>
+                    <li class="nav-item ps-2"><a href="" class="nav-link">Board</a></li>
+                    <li class="nav-item ps-2"><a href="" class="nav-link">Events</a></li>
+                    <li class="nav-item ps-2"><a href="" class="nav-link">History</a></li>
+                    <li class="nav-item ps-2"><a href="" class="nav-link">Tuition</a></li>
+                    <li class="nav-item ps-2"><a href="" class="nav-link">News</a></li>
+                   <li class="nav-item ps-2">
+                    <a href="" class="btn btn-warning">Admission</a>
+                    <a href="" class="btn btn-outline-warning">Portal</a>
+                   </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </nav>
+
+    <!-- @begin banner -->
+    <div class="banner bg-primary p-3">
+      <div class="container-lg text-light">
+         <strong>Breaking:</strong> School inter-house sports to start in two (2) weeks...
+      </div>
+    </div>
+
+    <!-- @end banner -->
+
+    <!-- @begin hero -->
+     <section class="hero align-content-center" style="height: 100vh;">
+        <div class="container text-light">
+            <h1 style="font-size: 5rem;">
+                Study,<br>
+              <strong>
+                  Learn And Lead.
+              </strong>
+            </h1>
+            <p class=" fs-3">
+                <b>Unlock</b> the key to competent career <br>
+                and leadership character through modern <strong>Education.</strong>
+            </p>
+            <p>
+                <a href="" class="px-5 py-3 btn btn-info">Admission</a>
+            </p>
+        </div>
+     </section>
+    <!-- @end hero -->
+
+    <section>
+        <div class="container-lg text-center p-3" style="margin-top: 3rem; margin-bottom: 4rem;">
+
+            <div class="row">
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="card card-body">
+                        <div class="">
+                            <i class="ph ph-books fs-1 text-info"></i>
+                        </div>
+                        <div class="">
+                            <h3>Standard</h3>
+                            <p>Our Academic Curriculum are standard and regularly updated</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="card card-body">
+                        <div class="">
+                            <i class="ph ph-brain fs-1 text-info"></i>
+                        </div>
+                        <div class="">
+                            <h3>Leadership</h3>
+                            <p>Our methods and approach breeds competent leadership skills.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="card card-body">
+                        <div class="">
+                            <i class="ph ph-graduation-cap fs-1 text-info"></i>
+                        </div>
+                        <div class="">
+                            <h3>Knowledge</h3>
+                            <p>We empowers our students with knowledge that help prepare their minds for roles ahead.</p>
+                        </div>
+                    </div>
+                    </div>
+                <div class="col-12 col-lg-3 mb-3">
+                    <div class="card card-body">
+                        <div class="">
+                            <i class="ph ph-suitcase-simple fs-1 text-info"></i>
+                        </div>
+                        <div class="">
+                            <h3>Skills</h3>
+                            <p>We don't just stop at class sessions, but every student is accessed physical and mentally for his self developement.</p>
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+    </section>
+
+      <section>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col-12 col-lg-6">
+                        <div class="rounded bg-secondary w-100 playground" style="height: 353px;">
+                            <div class="w-100 h-100 pg rounded">
+                                <img src="./assets/images/student3.png" style="height: calc(100% + 8rem); transform: translateY(-8rem); width: auto; object-fit: contain;" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 pt-4">
+                        <h1 class="text-center">
+                            <strong>Features</strong>
+                        </h1>
+                        <p class="lead text-center">
+                            Here are some basic structures and equipements, <br> that makes learning delightful for every kids
+                        </p>
+
+                        <div class="container">
+                            <ul class="list-unstyled mt-4">
+                                <li class="mb-3">
+                                    <div class="rounded-pill p-2 border border-1 bg-info-subtle text-info-emphasis border-info">
+                                        Calm, Secured And Conducive Environment
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="rounded-pill p-2 border border-1 bg-info-subtle text-info-emphasis border-info">
+                                        24/7 Power Supply
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="rounded-pill p-2 border border-1 bg-info-subtle text-info-emphasis border-info">
+                                        Modern E-library
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="rounded-pill p-2 border border-1 bg-info-subtle text-info-emphasis border-info">
+                                        Safe Playground
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section style="padding-top: 5rem;">
+        <div class="container-fluid  text-light" style="height: 100vh; background: linear-gradient(160deg, deepskyblue, blue);">
+
+
+            <div class="container h-100">
+              <div class="row h-100">
+                  <div class="col-12 col-lg-6 h-100 align-content-center">
+                    <h1 class="fw-bold">
+                       Expert Professionals And Qualified Teachers
+                    </h1>
+                    <p class="lead">
+                        <strong class="text-warning">Our Team</strong> is made up of expert professionals from trusted backgrounds and fields of experience.
+                    </p>
+                    <p class="lead">
+                        <strong class="text-warning">Our Teaching Team</strong>
+                        are made up of highly qualified professional teachers, who are capable of identifying individual student's academic challenges and help him/her lift the obstacles from his/her path. 
+                    </p>
+                    <p>
+                        <a href="" class="btn btn-warning px-5">Explore More</a>
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-6 h-100 d-none d-lg-block">
+                    <div class="h-100">
+                        <img src="./assets/images/tch.png" alt="" class=" w-100" style="height: calc(100% + 11rem); transform: translateY(-11rem); object-fit: 1;">
+                    </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid library">
+            <div class="container h-100">
+                <div class="row h-100 align-content-center">
+                    <div class="col-12 mb-3 text-light">
+                        <h1 class="fw-bold text-warning">
+                            Modern e-Library
+                        </h1>
+                        <p class="lead">
+                           Our school facility e-Library are equiped with updated academic materials, research/disertation archive, encyclopedias and career or professional journals and newspapers in both physical and digital format. 
+                        </p>
+
+                        <div class="mt-5">
+                            <h4 class="text-warning">With Extra Following Features</h4>
+                            <div class="row feat mt-3">
+                                <div class="col-12 col-lg-3 text-center pt-2">
+                                    <span class="fw-bold text-warning p-2">24/7 power</span>
+                                    <p>Our facility have steady power supply thereby ensuring students' steady active progress.</p>
+                                </div>
+                                <div class="col-12 col-lg-3 text-center pt-2">
+                                    <span class="fw-bold text-warning p-2">Emergency Care Unit</span>
+                                    <p>Our facility has a standard active, emergency care units comprised of experienced health professionals who are there to ensure any child's health safety.</p>
+                                </div>
+                                <div class="col-12 col-lg-3 text-center pt-2">
+                                    <span class="fw-bold text-warning p-2">Adequate Security</span>
+                                    <p>A decisive strong security aparatus are put in place for maximium security surveilance and cordinations.</p>
+                                </div>
+                                <div class="col-12 col-lg-3 text-center pt-2">
+                                    <span class="fw-bold text-warning p-2">Hygenic Environment</span>
+                                    <p>Proper environmental management are put in place, which includes regular sanitation routines, classroom cleaning, public areas cleaning et.c ensuring healthy environment for students, staff and visitors.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-12 col-lg-6 mb-3"></div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- swiperjs, slick, owl-carousel, gsap -> threejs -->
+         <!-- carousel -->
+          <div class="container text-center" style="padding-top: 3rem;">
+            <h2 class="fw-bold">
+                Top Winners In Inter-College Sports Competition
+            </h2>
+            <p class="lead pb-4">
+                Our elite school have been performing excellently in all areas, both academic circle and sports activities. this is due to the professional and tireless efforts of the school to instill the zeal for excellence and discipline to students. the very excellence the school have alway stood for all the years.
+            </p>
+            <p class="pb-5">
+                <a href="" class="btn btn-outline-warning">
+                    Explore Our Awards
+                </a>
+            </p>
+          </div>
+          <div class="container-lg rounded-pill overflow-hidden">
+           <div id="carouselExampleDark" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item" data-bs-interval="10000">
+      <img src="./assets/images/sld4.jpg" style="height: 80vh;" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-pill">
+        <h5 class="text-warning">Top Winner - AfriCon International Mathematics Award</h5>
+        <p>Our school came first position in AfriCon Mathematics Olympiad Competition held at 
+            <b>Adis-ababa, Ethiopa</b>.
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item active" data-bs-interval="2000">
+      <img src="./assets/images/slde1.webp" style="height: 80vh;" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-pill">
+        <h5 class="text-warning">Top third winner Basket Ball competition held at South Africa</h5>
+        <p>Our humble institution took the upper third position in a just concluded basket ball
+            competition among several other schools accross the globe.
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./assets/images/sld5.jpg" style="height: 80vh;" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-pill">
+        <h5 class="text-warning">OlympAfrica International School Athletes Bronze-Medal Winner</h5>
+        <p>
+            Our School became Bronze Medal winner in Olympafrica Internal school athlete sports 
+            competition. our students were able to qualify and win a bronze medal in the tournament.
+        </p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+          </div>
+    </section>
+
+
+<section>
+    <div class="container-lg mx-auto" style="margin: 6rem 0rem;">
+        <h3 class="text-center">
+            Our Sponsors And Partners
+        </h3>
+        <p class="lead text-center mb-4">
+            These are organisations and institutions that partner with our noble elite school
+        </p>
+
+        <!--  -->
+
+        <div class="row">
+            <div class="col">
+                <img src="./assets/images/olympiad.webp" style="height: 5rem;" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <img src="./assets/images/cowbell-Mathematics-competition.png" style="height: 5rem;" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <img src="./assets/images/Spelling-Bee.png" style="height: 5rem;" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <img src="./assets/images/Bic.jpg" style="height: 5rem;" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <img src="./assets/images/unicef-1-1.jpg" style="height: 5rem;" alt="" class="img-fluid">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="container-fluid">
+        <div class="container">
+            <h3 class="fw-bold text-center">
+                Our Patron
+            </h3>
+            <p class="text-center lead">
+                These are different individuals who have helped shaped our noble institution.
+            </p>
+
+            <div class="col-12">
+                <div class="patron">
+                    <div class="d-flex align-items-start gap-4">
+
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+    <button class="nav-link d-inline-block rounded-circle active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">01</button>
+    <button class="nav-link d-inline-block rounded-circle" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">02</button>
+    <button class="nav-link d-inline-block rounded-circle" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">03</button>
+    <button class="nav-link d-inline-block rounded-circle" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">04</button>
+    <button class="nav-link d-inline-block rounded-circle" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">05</button>
+  </div>
+ 
+  <div class="tab-content" id="v-pills-tabContent">
+    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+        <div class="d-flex flex-wrap bg-light rounded p-2">
+            <img src="./assets/images/obi.jpg" style="width: 18rem;" class="rounded shadow me-4" alt="">
+            <div class="col-10 align-content-center p-4">
+                <h4 class="text-warning">HRH Igwe Nnaemeka Alfred Ugochukwu Achebe, CFR</h4>
+                <p>
+                    Known as Agbogidi, the Obi holds a crucial position in maintaining the traditional, economic, and social structure of
+                     Onitsha, overseeing its cultural, commercial, and traditional affairs. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+        <div class="row bg-light rounded p-2">
+            <img src="./assets/images/Peter-Obi.jpeg" style="width: 18rem;" class="rounded shadow me-4" alt="">
+            <div class="col-12 col-lg-10 align-content-center p-4">
+                <h4 class="text-warning">Mr. Peter Gregory Obi (CON)</h4>
+                <p>
+                    Known as an advocate for reducing the cost of governance, increasing savings, <br> and improving
+                     educational standards
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
+        <div class="row bg-light rounded p-2">
+            <img src="./assets/images/pete.jpg" style="width: 18rem;" class="rounded shadow me-4" alt="">
+            <div class="col-12 col-lg-10 align-content-center p-4">
+                <h4 class="text-warning">Chief Pete Edochie</h4>
+                <p>
+                    Pete Edochie is known for his deep, authoritative voice and for incorporating Igbo proverbs into his acting, making him a revered "father figure" in African cinema. As of 2024, he continues to be recognized for his immense contributions to Nollywood
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+        <div class="row bg-light rounded p-2">
+            <img src="./assets/images/Mikel-1.webp" style="width: 18rem;" class="rounded shadow me-4" alt="">
+            <div class="col-12 col-lg-10 align-content-center p-4">
+                <h4 class="text-warning">Mr. Mikel Obi</h4>
+                <p>
+                    Represented Nigeria at the 2014 and 2018 FIFA World Cups. Won a bronze medal at the 2016 Summer Olympics
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+        <div class="row bg-light rounded p-2">
+            <img src="./assets/images/dora.jpg" style="width: 18rem;" class="rounded shadow me-4" alt="">
+            <div class="col-12 col-lg-10 align-content-center p-4">
+                <h4 class="text-warning">Dame Mrs. Dora Akunyelu</h4>
+                <p>
+                    Akunyili was the most decorated Nigerian in history, with 930 awards recognized during her life and after her death. Notable awards include
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
+ 
+
+
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container-fluid py-5">
+        <h4 class="fw-bold text-center">
+            Frequently Asked Questions (FAQs)
+        </h4>
+
+<div class="container">
+   
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item mb-4 rounded">
+    <h2 class="accordion-header">
+      <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Where is New Era School Located?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item’s accordion body.</div>
+    </div>
+  </div>
+  <div class="accordion-item mb-4 rounded">
+    <h2 class="accordion-header">
+      <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Do the school have boarding facility?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine this being filled with some actual content.</div>
+    </div>
+  </div>
+  <div class="accordion-item mb-4 rounded">
+    <h2 class="accordion-header">
+      <button class="accordion-button shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        do the have transportation support for day student?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+    </div>
+</section>
+
+<section>
+    <div class="container-fluid">
+
+        <h4 class="text-center fw-bold">
+            Book Appointment
+        </h4>
+        <p class="lead text-center">
+            we are here, to ensure your child's education is upto the standards
+        </p>
+        <p class="text-center">
+            <a href="javascript: void(0);" class="btn btn-dark px-5" data-bs-toggle="modal" data-bs-target="#bookings">Open Ticket</a>
+
+            <div class="modal fade" id="bookings">
+                <div class="modal-dialog">
+                    <div class="modal-content p-4">
+                        <a href="javascript: void(0);" class="btn-close shadow-none ms-auto" data-bs-dismiss="modal"></a>
+
+                        <form action="" method="post">
+                            <h5 class="text-center">Book An Appointement</h5>
+
+                            <div class="mb-3">
+                                <label for="" class="form-label lead">FirstName<sup class="text-danger">*</sup></label>
+                                <input type="text" class="form-control" placeholder="eg: John">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label lead">LastName<sup class="text-danger">*</sup></label>
+                                <input type="text" class="form-control" placeholder="eg: Doe">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label lead">Email<sup class="text-danger">*</sup></label>
+                                <input type="text" class="form-control" placeholder="eg: johndoe@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="" class="form-label lead">Description<sup class="text-danger">*</sup></label>
+                                <textarea class="form-control" placeholder="Descript your reason for the appointment"></textarea>
+                            </div>
+                           <div class="mb3">
+                            <button type="submit" class="btn btn-dark form-control">
+                                Submit
+                            </button>
+                           </div>
+
+                            <p class="text-end">
+                                Poweredby: <a href="">NewEraSoft ltd</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="container py-4">
+        <div class="text-center">
+
+            <h3 class="fw-bold">
+                Our Outstanding Students' performance in external examinations
+            </h3>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Photo</th>
+                        <th>Category</th>
+                        <th>Examination</th>
+                        <th>Score</th>
+                        <th>Student</th>
+                        <th>Year/Set</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="./assets/images/student3.png" width="38px" height="38px" class="rounded-circle" alt="">
+                        </td>
+                        <td>Senior</td>
+                        <td>JAMB</td>
+                        <td>305</td>
+                        <td>Okafor Uchenna</td>
+                        <td>26/27</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./assets/images/student3.png" width="38px" height="38px" class="rounded-circle" alt="">
+                        </td>
+                        <td>Senior</td>
+                        <td>JAMB</td>
+                        <td>305</td>
+                        <td>Okafor Uchenna</td>
+                        <td>26/27</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./assets/images/student3.png" width="38px" height="38px" class="rounded-circle" alt="">
+                        </td>
+                        <td>Senior</td>
+                        <td>JAMB</td>
+                        <td>305</td>
+                        <td>Okafor Uchenna</td>
+                        <td>26/27</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./assets/images/student3.png" width="38px" height="38px" class="rounded-circle" alt="">
+                        </td>
+                        <td>Senior</td>
+                        <td>JAMB</td>
+                        <td>305</td>
+                        <td>Okafor Uchenna</td>
+                        <td>26/27</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./assets/images/student3.png" width="38px" height="38px" class="rounded-circle" alt="">
+                        </td>
+                        <td>Senior</td>
+                        <td>JAMB</td>
+                        <td>305</td>
+                        <td>Okafor Uchenna</td>
+                        <td>26/27</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./assets/images/student3.png" width="38px" height="38px" class="rounded-circle" alt="">
+                        </td>
+                        <td>Senior</td>
+                        <td>JAMB</td>
+                        <td>305</td>
+                        <td>Okafor Uchenna</td>
+                        <td>26/27</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./assets/images/student3.png" width="38px" height="38px" class="rounded-circle" alt="">
+                        </td>
+                        <td>Senior</td>
+                        <td>JAMB</td>
+                        <td>305</td>
+                        <td>Okafor Uchenna</td>
+                        <td>26/27</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./assets/images/student3.png" width="38px" height="38px" class="rounded-circle" alt="">
+                        </td>
+                        <td>Senior</td>
+                        <td>JAMB</td>
+                        <td>305</td>
+                        <td>Okafor Uchenna</td>
+                        <td>26/27</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./assets/images/student3.png" width="38px" height="38px" class="rounded-circle" alt="">
+                        </td>
+                        <td>Senior</td>
+                        <td>JAMB</td>
+                        <td>305</td>
+                        <td>Okafor Uchenna</td>
+                        <td>26/27</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./assets/images/student3.png" width="38px" height="38px" class="rounded-circle" alt="">
+                        </td>
+                        <td>Senior</td>
+                        <td>JAMB</td>
+                        <td>305</td>
+                        <td>Okafor Uchenna</td>
+                        <td>26/27</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="border border-1 rounded-pill p-2">
+            <div class="btn-group ms-4">
+                <button class="btn btn-primary">Open Ticket</button>
+                <button class="btn btn-primary">Portal</button>
+                <button class="btn btn-primary ">Mail
+                     <span class="badge bg-info rounded-pill " data-bs-toggle="tooltip" data-bs-title="8 unread emails in the inbox">8</span>
+                </button>
+                <button class="btn btn-primary">Messages 
+                    <span class="badge bg-warning rounded-pill"
+                     data-bs-toggle="popover" data-bs-placement="top"
+        data-bs-custom-class="custom-popover"
+        data-bs-title="Messages Delivered"
+        data-bs-content="28 Unread Messages Received"
+                    >28</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+</section>
+
+<footer>
+    <section class="container-fluid bg-body-tertiary py-4 text-secondary">
+        <div class="container-lg">
+            <div class="col-8 col-lg-6">
+                 <a href="/" class="text-decoration-none">
+                <img src="./assets/images/logo.png" alt="" width="88px">
+            </a> 
+            <h4>New Era Schools</h4> 
+            <p>
+                 <b>Unlock</b> the key to competent career <br>
+                and leadership character through modern <strong>Education.</strong>
+            </p>
+            </div>
+
+            <div class="row my-4">
+                <div class="col-6 col-lg-3 m-auto">
+                    <h5>Quick links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="" class="text-decoration-none d-block text-secondary">Home</a></li>
+                        <li><a href="" class="text-decoration-none d-block text-secondary">About us</a></li>
+                        <li><a href="" class="text-decoration-none d-block text-secondary">Board</a></li>
+                        <li><a href="" class="text-decoration-none d-block text-secondary">Events</a></li>
+                        <li><a href="" class="text-decoration-none d-block text-secondary">History</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 m-auto">
+                    <h5>
+                        Resources
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li><a href="" class="text-decoration-none d-block text-secondary">E-library</a></li>
+                        <li><a href="" class="text-decoration-none d-block text-secondary">Events Gallery</a></li>
+                        <li><a href="" class="text-decoration-none d-block text-secondary">News</a></li>
+                        <li><a href="" class="text-decoration-none d-block text-secondary">Blogs</a></li>
+                        <li><a href="" class="text-decoration-none d-block text-secondary">Announcements</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-3 m-auto">
+                    <h5>
+                        Board
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li><a href="" class="text-decoration-none text-secondary d-block">Administration</a></li>
+                        <li><a href="" class="text-decoration-none text-secondary d-block">Bursary</a></li>
+                        <li><a href="" class="text-decoration-none text-secondary d-block">Committee</a></li>
+                        <li><a href="" class="text-decoration-none text-secondary d-block">PTA</a></li>
+                        <li><a href="" class="text-decoration-none text-secondary d-block">Staff</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-3 m-auto">
+
+                    <h5>
+                        Portals
+                    </h5>
+                    <ul class="list-unstyled">
+                        <li><a href="" class="text-decoration-none text-secondary d-block">Staff Portal</a></li>
+                        <li><a href="" class="text-decoration-none text-secondary d-block">Student Portal</a></li>
+                        <li><a href="" class="text-decoration-none text-secondary d-block">ICT</a></li>
+                        <li><a href="" class="text-decoration-none text-secondary d-block">Payments</a></li>
+                        <li><a href="" class="text-decoration-none text-secondary d-block">OSE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="mt-5 text-center">
+            <p>
+                &copy; 2007 - 
+                <span class="fw-bold">
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                </span>
+               <strong>New Era Schools</strong>. All right reserved.
+            </p>
+        </div>
+    </section>
+</footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script>
+
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+
+    </script>
+</body>
+</html>
